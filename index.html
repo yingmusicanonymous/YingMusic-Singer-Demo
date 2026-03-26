@@ -177,6 +177,7 @@
       <p style="text-align: justify;">
         The model should preserve the melody from the <i>Original Melody</i>, match the timbre of the <i>Timbre
           Reference</i>, and faithfully render the <i>Modified Lyrics</i>.
+        <!-- The model should preserve the melody and match the timbre of the original singing clip, while faithfully rendering the modified lyrics. -->
       </p>
 
       <!-- Filter Buttons for Sing Edit -->
@@ -264,10 +265,7 @@
     </p>
     </p>
   </section>
-
-  <script>
-    const DATA_Sing_Edit = [
-      {
+      <!-- {
         "id": "ZH-Tenor-1_Mixed_Voice_and_Falsetto_过火_Falsetto_Group_0024_cnen_mix",
         "original_language": "ZH",
         "edit_task": "cnen_mix",
@@ -277,7 +275,9 @@
         "modified_lyrics": "受折磨|是我给你 freedom 过了火|如果|you want to fly|伤痛 I'll bear",
         "vevo_path": "wavs/sing_edit/ZH-Tenor-1_Mixed_Voice_and_Falsetto_过火_Falsetto_Group_0024_cnen_mix_vevo.wav",
         "ours_path": "wavs/sing_edit/ZH-Tenor-1_Mixed_Voice_and_Falsetto_过火_Falsetto_Group_0024_cnen_mix_ours.wav"
-      },
+      }, -->
+  <script>
+    const DATA_Sing_Edit = [
       {
         "id": "ZH-Alto-1_Breathy_给电影人的情书_Breathy_Group_0007_cnen_mix",
         "original_language": "ZH",
@@ -334,17 +334,6 @@
         "ours_path": "wavs/sing_edit/ZH-Alto-1_Mixed_Voice_and_Falsetto_时间煮雨_Falsetto_Group_0005_decrease_ours.wav"
       },
       {
-        "id": "ZH-Tenor-1_Pharyngeal_老男孩_Control_Group_0002_increase",
-        "original_language": "ZH",
-        "edit_task": "increase",
-        "original_melody": "wavs/sing_edit/Chinese_ZH-Tenor-1_Pharyngeal_老男孩_Control_Group_0002.wav",
-        "timbre_reference": "wavs/sing_edit/Chinese_ZH-Tenor-1_Pharyngeal_老男孩_Control_Group_0002.wav",
-        "original_lyrics": "青春如同奔流的江河|一去不回来不及道别",
-        "modified_lyrics": "青春如同奔流的江河|一去不回来不及道别和叹息",
-        "vevo_path": "wavs/sing_edit/ZH-Tenor-1_Pharyngeal_老男孩_Control_Group_0002_increase_vevo.wav",
-        "ours_path": "wavs/sing_edit/ZH-Tenor-1_Pharyngeal_老男孩_Control_Group_0002_increase_ours.wav"
-      },
-      {
         "id": "ZH-Tenor-1_Breathy_借_Breathy_Group_0003_increase",
         "original_language": "ZH",
         "edit_task": "increase",
@@ -387,17 +376,6 @@
         "modified_lyrics": "故事值得被铭记|以对抗岁月痕迹",
         "vevo_path": "wavs/sing_edit/ZH-Tenor-1_Breathy_勇气_Breathy_Group_0003_keep_quantity_full_changes_vevo.wav",
         "ours_path": "wavs/sing_edit/ZH-Tenor-1_Breathy_勇气_Breathy_Group_0003_keep_quantity_full_changes_ours.wav"
-      },
-      {
-        "id": "ZH-Alto-1_Glissando_青花瓷_Control_Group_0004_keep_quantity_full_changes",
-        "original_language": "ZH",
-        "edit_task": "keep_quantity_full_changes",
-        "original_melody": "wavs/sing_edit/Chinese_ZH-Alto-1_Glissando_青花瓷_Control_Group_0004.wav",
-        "timbre_reference": "wavs/sing_edit/Chinese_ZH-Alto-1_Glissando_青花瓷_Control_Group_0004.wav",
-        "original_lyrics": "天青色等烟雨|而我在等你|炊烟袅袅升起",
-        "modified_lyrics": "阳光中赏花香|花瓣在飘落|山间幽静致远",
-        "vevo_path": "wavs/sing_edit/ZH-Alto-1_Glissando_青花瓷_Control_Group_0004_keep_quantity_full_changes_vevo.wav",
-        "ours_path": "wavs/sing_edit/ZH-Alto-1_Glissando_青花瓷_Control_Group_0004_keep_quantity_full_changes_ours.wav"
       },
       {
         "id": "ZH-Alto-1_Glissando_青花瓷_Control_Group_0006_keep_quantity_partial_changes",
@@ -499,17 +477,6 @@
         "ours_path": "wavs/sing_edit/EN-Alto-1_Mixed_Voice_and_Falsetto_let_it_go_Control_Group_0010_cnen_mix_ours.wav"
       },
       {
-        "id": "EN-Tenor-1_Breathy_Always_Remember_Us_This_Way_Breathy_Group_0010_decrease",
-        "original_language": "EN",
-        "edit_task": "decrease",
-        "original_melody": "wavs/sing_edit/English_EN-Tenor-1_Breathy_Always_Remember_Us_This_Way_Breathy_Group_0010.wav",
-        "timbre_reference": "wavs/sing_edit/English_EN-Tenor-1_Breathy_Always_Remember_Us_This_Way_Breathy_Group_0010.wav",
-        "original_lyrics": "when the sun goes down|and the band won't play",
-        "modified_lyrics": "when the sun goes down|and band won't play",
-        "vevo_path": "wavs/sing_edit/EN-Tenor-1_Breathy_Always_Remember_Us_This_Way_Breathy_Group_0010_decrease_vevo.wav",
-        "ours_path": "wavs/sing_edit/EN-Tenor-1_Breathy_Always_Remember_Us_This_Way_Breathy_Group_0010_decrease_ours.wav"
-      },
-      {
         "id": "EN-Alto-1_Mixed_Voice_and_Falsetto_let_it_go_Mixed_Voice_Group_0016_decrease",
         "original_language": "EN",
         "edit_task": "decrease",
@@ -552,17 +519,6 @@
         "modified_lyrics": "and he's long gone when he's next to me|and I deeply realize the blame is on me",
         "vevo_path": "wavs/sing_edit/EN-Tenor-1_Breathy_I_Knew_You_Were_Trouble_Control_Group_0004_increase_vevo.wav",
         "ours_path": "wavs/sing_edit/EN-Tenor-1_Breathy_I_Knew_You_Were_Trouble_Control_Group_0004_increase_ours.wav"
-      },
-      {
-        "id": "EN-Alto-1_Pharyngeal_beauty_and_the_beast_Control_Group_0010_increase",
-        "original_language": "EN",
-        "edit_task": "increase",
-        "original_melody": "wavs/sing_edit/English_EN-Alto-1_Pharyngeal_beauty_and_the_beast_Control_Group_0010.wav",
-        "timbre_reference": "wavs/sing_edit/English_EN-Alto-1_Pharyngeal_beauty_and_the_beast_Control_Group_0010.wav",
-        "original_lyrics": "certain as the sun|rising in the east",
-        "modified_lyrics": "certain as the sun|rising in the bright east",
-        "vevo_path": "wavs/sing_edit/EN-Alto-1_Pharyngeal_beauty_and_the_beast_Control_Group_0010_increase_vevo.wav",
-        "ours_path": "wavs/sing_edit/EN-Alto-1_Pharyngeal_beauty_and_the_beast_Control_Group_0010_increase_ours.wav"
       },
       {
         "id": "EN-Alto-1_Mixed_Voice_and_Falsetto_how_does_a_moment_last_forever_Control_Group_0008_keep_quantity_full_changes",
@@ -652,17 +608,6 @@
         "vevo_path": "wavs/sing_edit/EN-Tenor-1_Glissando_I_Knew_You_Were_Trouble_Control_Group_0005_translate_vevo.wav",
         "ours_path": "wavs/sing_edit/EN-Tenor-1_Glissando_I_Knew_You_Were_Trouble_Control_Group_0005_translate_ours.wav"
       },
-      {
-        "id": "EN-Tenor-1_Mixed_Voice_and_Falsetto_What_Was_I_Made_For？_Falsetto_Group_0002_translate",
-        "original_language": "EN",
-        "edit_task": "translate",
-        "original_melody": "wavs/sing_edit/English_EN-Tenor-1_Mixed_Voice_and_Falsetto_What_Was_I_Made_For？_Falsetto_Group_0002.wav",
-        "timbre_reference": "wavs/sing_edit/English_EN-Tenor-1_Mixed_Voice_and_Falsetto_What_Was_I_Made_For？_Falsetto_Group_0002.wav",
-        "original_lyrics": "what was i made for|taking a drive|i was an ideal|looked so alive",
-        "modified_lyrics": "我为何而生|驾车前行|曾是个理想|如此鲜活",
-        "vevo_path": "wavs/sing_edit/EN-Tenor-1_Mixed_Voice_and_Falsetto_What_Was_I_Made_For？_Falsetto_Group_0002_translate_vevo.wav",
-        "ours_path": "wavs/sing_edit/EN-Tenor-1_Mixed_Voice_and_Falsetto_What_Was_I_Made_For？_Falsetto_Group_0002_translate_ours.wav"
-      }
     ];
 
     const DATA_Melody_Control = [
@@ -687,28 +632,6 @@
         "modified_lyrics": "不用太久就能走到目的地|in the crowd full of kindness",
         "vevo_path": "wavs/melody_control/ZH-Alto-1_Mixed_Voice_and_Falsetto_平凡的一天_Control_Group_0003_cnen_mix_vevo.wav",
         "ours_path": "wavs/melody_control/ZH-Alto-1_Mixed_Voice_and_Falsetto_平凡的一天_Control_Group_0003_cnen_mix_ours.wav"
-      },
-      {
-        "id": "ZH-Alto-1_Mixed_Voice_and_Falsetto_可乐_Control_Group_0001_cnen_mix",
-        "original_language": "ZH",
-        "edit_task": "cnen_mix",
-        "original_melody": "wavs/melody_control/Chinese_ZH-Alto-1_Mixed_Voice_and_Falsetto_可乐_Control_Group_0001.wav",
-        "timbre_reference": "wavs/melody_control/Chinese_ZH-Tenor-1_Glissando_魔鬼中的天使_Control_Group_0010.wav",
-        "original_lyrics": "可能是因为|我们相遇的太晚了",
-        "modified_lyrics": "可能是因为|we meet too late",
-        "vevo_path": "wavs/melody_control/ZH-Alto-1_Mixed_Voice_and_Falsetto_可乐_Control_Group_0001_cnen_mix_vevo.wav",
-        "ours_path": "wavs/melody_control/ZH-Alto-1_Mixed_Voice_and_Falsetto_可乐_Control_Group_0001_cnen_mix_ours.wav"
-      },
-      {
-        "id": "ZH-Tenor-1_Glissando_画心_Glissando_Group_0005_decrease",
-        "original_language": "ZH",
-        "edit_task": "decrease",
-        "original_melody": "wavs/melody_control/Chinese_ZH-Tenor-1_Glissando_画心_Glissando_Group_0005.wav",
-        "timbre_reference": "wavs/melody_control/Chinese_ZH-Alto-1_Pharyngeal_老男孩_Pharyngeal_Group_0003.wav",
-        "original_lyrics": "开出怎样的结果|看着你",
-        "modified_lyrics": "开出的结果|看着你",
-        "vevo_path": "wavs/melody_control/ZH-Tenor-1_Glissando_画心_Glissando_Group_0005_decrease_vevo.wav",
-        "ours_path": "wavs/melody_control/ZH-Tenor-1_Glissando_画心_Glissando_Group_0005_decrease_ours.wav"
       },
       {
         "id": "ZH-Tenor-1_Glissando_如果爱忘了_Glissando_Group_0007_decrease",
@@ -819,17 +742,6 @@
         "modified_lyrics": "忽然翻看多少照片|多少往事思绪",
         "vevo_path": "wavs/melody_control/ZH-Alto-1_Mixed_Voice_and_Falsetto_老男孩_Falsetto_Group_0010_keep_quantity_partial_changes_vevo.wav",
         "ours_path": "wavs/melody_control/ZH-Alto-1_Mixed_Voice_and_Falsetto_老男孩_Falsetto_Group_0010_keep_quantity_partial_changes_ours.wav"
-      },
-      {
-        "id": "ZH-Tenor-1_Glissando_魔鬼中的天使_Control_Group_0012_keep_quantity_partial_changes",
-        "original_language": "ZH",
-        "edit_task": "keep_quantity_partial_changes",
-        "original_melody": "wavs/melody_control/Chinese_ZH-Tenor-1_Glissando_魔鬼中的天使_Control_Group_0012.wav",
-        "timbre_reference": "wavs/melody_control/Chinese_ZH-Alto-1_Pharyngeal_失落沙洲_Pharyngeal_Group_0000.wav",
-        "original_lyrics": "你是魔鬼中的天使所以送我心碎的方式",
-        "modified_lyrics": "你是猫咪里的老虎所以撞我球鞋的样式",
-        "vevo_path": "wavs/melody_control/ZH-Tenor-1_Glissando_魔鬼中的天使_Control_Group_0012_keep_quantity_partial_changes_vevo.wav",
-        "ours_path": "wavs/melody_control/ZH-Tenor-1_Glissando_魔鬼中的天使_Control_Group_0012_keep_quantity_partial_changes_ours.wav"
       },
       {
         "id": "ZH-Tenor-1_Pharyngeal_传奇_Pharyngeal_Group_0010_translate",
@@ -975,17 +887,6 @@
         "ours_path": "wavs/melody_control/EN-Tenor-1_Glissando_Stay_Glissando_Group_0005_keep_quantity_full_changes_ours.wav"
       },
       {
-        "id": "EN-Tenor-1_Mixed_Voice_and_Falsetto_Cardigan_Falsetto_Group_0007_keep_quantity_full_changes",
-        "original_language": "EN",
-        "edit_task": "keep_quantity_full_changes",
-        "original_melody": "wavs/melody_control/English_EN-Tenor-1_Mixed_Voice_and_Falsetto_Cardigan_Falsetto_Group_0007.wav",
-        "timbre_reference": "wavs/melody_control/English_EN-Alto-1_Mixed_Voice_and_Falsetto_how_does_a_moment_last_forever_Control_Group_0003.wav",
-        "original_lyrics": "vintage tee brand new phone|high heels on cobblestones",
-        "modified_lyrics": "oldest book broken watch|bare feet in grassy spot",
-        "vevo_path": "wavs/melody_control/EN-Tenor-1_Mixed_Voice_and_Falsetto_Cardigan_Falsetto_Group_0007_keep_quantity_full_changes_vevo.wav",
-        "ours_path": "wavs/melody_control/EN-Tenor-1_Mixed_Voice_and_Falsetto_Cardigan_Falsetto_Group_0007_keep_quantity_full_changes_ours.wav"
-      },
-      {
         "id": "EN-Alto-2_Mixed_Voice_and_Falsetto_Hey_Jude_Control_Group_0007_keep_quantity_full_changes",
         "original_language": "EN",
         "edit_task": "keep_quantity_full_changes",
@@ -995,17 +896,6 @@
         "modified_lyrics": "won't open the door|and say tomorrow",
         "vevo_path": "wavs/melody_control/EN-Alto-2_Mixed_Voice_and_Falsetto_Hey_Jude_Control_Group_0007_keep_quantity_full_changes_vevo.wav",
         "ours_path": "wavs/melody_control/EN-Alto-2_Mixed_Voice_and_Falsetto_Hey_Jude_Control_Group_0007_keep_quantity_full_changes_ours.wav"
-      },
-      {
-        "id": "EN-Alto-1_Mixed_Voice_and_Falsetto_all_is_found_Control_Group_0001_keep_quantity_partial_changes",
-        "original_language": "EN",
-        "edit_task": "keep_quantity_partial_changes",
-        "original_melody": "wavs/melody_control/English_EN-Alto-1_Mixed_Voice_and_Falsetto_all_is_found_Control_Group_0001.wav",
-        "timbre_reference": "wavs/melody_control/English_EN-Tenor-1_Pharyngeal_Unconditionally_Pharyngeal_Group_0001.wav",
-        "original_lyrics": "there's a river|full of memory|sleep my darling safe and sound",
-        "modified_lyrics": "there's a book|full of mystery|stay my darling calm and found",
-        "vevo_path": "wavs/melody_control/EN-Alto-1_Mixed_Voice_and_Falsetto_all_is_found_Control_Group_0001_keep_quantity_partial_changes_vevo.wav",
-        "ours_path": "wavs/melody_control/EN-Alto-1_Mixed_Voice_and_Falsetto_all_is_found_Control_Group_0001_keep_quantity_partial_changes_ours.wav"
       },
       {
         "id": "EN-Tenor-1_Vibrato_Long_Live_Control_Group_0001_keep_quantity_partial_changes",
